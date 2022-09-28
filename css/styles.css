@@ -115,7 +115,7 @@ input[type="checkbox"]{
   background: #874fff;
   border-radius: 999px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   nav ul {
     display: none;
   }
