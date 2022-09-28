@@ -1,0 +1,171 @@
+:root {
+  --primary: purple;
+  --user: gold;
+  --secondary: black;
+  --tertiary: aqua;
+  --width: 40px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  height: 100vh;
+}
+/* .rect {
+   width: 0px;
+   border: 100px solid transparent;
+   border-bottom-color: yellow;
+   animation-name: anime;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-delay: 0s;
+   transition-property: border;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  transition-duration: 500ms;
+   transition-timing-function: ease-in;
+   animation-timing-function: ease-in;
+   position: absolute;
+} */
+/* 
+@keyframes anime {
+  0% {
+   top: -100px;
+  left: 40%;
+
+  }
+  25% {
+   top: 18%;
+  left: 0;
+  }
+  50% {
+   left: 40%;
+   top: 70%;
+  }
+  75% {
+   top: 18%;
+   left: 90%;
+  }
+  100% {
+   top: -100px;
+  left: 40%;
+  }
+} */
+
+/* .circle{
+   width: 0;
+   border-radius: 999px;
+   border: 100px solid blue;
+   border-left-color: yellow;
+   border-top-color: yellow;
+   margin: 30%;
+   animation-name: anime;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  transition-property: border;
+
+  animation-direction: alternate;
+  transition-duration: 5s;
+   transition-timing-function: ease-in;
+}
+@keyframes anime {
+   from{
+     transform: skew(0deg);
+   border: 100px solid blue;
+   border-left-color: yellow;
+   border-top-color: yellow;
+   }
+   to{
+      transform: skew(180deg);
+      border: 150px solid yellow;
+      border-left-color: blue;
+   border-top-color: blue;
+   }
+} */
+/* p{
+   color: var(--primary);
+   background-color: var(--user);
+} */
+nav {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  width: 75%;
+}
+ul li {
+  cursor: pointer;
+}
+
+input[type="checkbox"]{
+   display: none;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #874fff;
+  border-radius: 999px;
+}
+@media screen and (max-width: 640px) {
+  nav ul {
+    display: none;
+  }
+  
+  .ham {
+    width: 40px;
+    height: 5px;
+    background: #874fff;
+    border-radius: 99px;
+    cursor: pointer;
+    position: relative;
+  }
+  .ham::after,
+  .ham::before {
+    content: "";
+    cursor: pointer;
+    width: 40px;
+    height: 5px;
+    background: #874fff;
+    border-radius: 99px;
+    position: absolute;
+  }
+  .ham::after {
+    top: -10px;
+  }
+  .ham::before {
+    top: 10px;
+  }
+  #check:checked ~ .menu{
+   width: calc(100% - 40px);
+   position: absolute;
+   display: flex;
+   top: 100px;
+   padding: 40px;
+   padding-right: 40px;
+   flex-direction: column;
+   background-color: #874fff;
+   left: 0;
+   bottom: 0;
+  }
+}
+.box{
+   height: 300px;
+   width: 300px;
+   background-color: #874fff;
+   flex-basis: 33.33%;
+}
+section{
+   display: flex;
+   justify-content:space-between;
+   row-gap: 30px;
+   flex-wrap: wrap;
+}
